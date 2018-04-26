@@ -1,28 +1,20 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <div class="container mt-4">
+      <b-list-group-item active>Simple Task List</b-list-group-item>
+      <TaskList/>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
+import TaskList from "./components/TaskList";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    TaskList
   }
-}
+};
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
